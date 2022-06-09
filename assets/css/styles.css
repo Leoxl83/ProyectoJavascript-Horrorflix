@@ -11,12 +11,42 @@ body {
     background-image: url("../images/fondo.jpg");
     background-size: cover;
 }
+.navbar{
+    margin-bottom: 30px;
+}
+
+
 
 #logo {
     margin-top: 22px;
     margin-left:75px;
+    transition: 0.5s all ease-in-out; 
+}
+#logo:hover {
+    transform: scale(1.1); 
+}
+.peliculas {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    text-align: center; 
+}
+.peliculas__rectangulo {
+    width: 150px;
+    margin: 15px;
+    background-color: #050505;
+    border-radius: 10px; 
+}
+.peliculaImagen {
+    padding-top: 10px; 
 }
 
+.tituloPelicula {
+    margin-bottom: 10px;
+    color: ivory;
+    text-align:center;
+}
 
 .form-register {
     width: 400px;

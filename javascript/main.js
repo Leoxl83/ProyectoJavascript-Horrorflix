@@ -1,15 +1,15 @@
 
 //Registrar Usuarios//
 
-const usuariosRegistrados = [];
+//const usuariosRegistrados = [];
 
 class Usuarios {
-    constructor (nombre, apellido, usuario, mail, password) {
+    constructor (nombre, apellido, usuario, mail, contraseña) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.usuario = usuario;
         this.mail=mail;
-        this.password=password;
+        this.contraseña=contraseña;
     }
 }
 
@@ -18,23 +18,33 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
     const UsuariosRegistrados = []
 
     function registro() {
-        let nombre = document.getElementById('nombre').value
-        let apellido = document.getElementById('apellido').value
-        let usuario = document.getElementById('usuario').value
-        let mail = document.getElementById('mail').value
-        let password = document.getElementById('password').value
+        let nombre = document.getElementById('nombre').value;
+        let apellido = document.getElementById('apellido').value;
+        let usuario = document.getElementById('usuario').value;
+        let mail = document.getElementById('mail').value;
+        let contraseña = document.getElementById('contraseña').value;
 
-        const userReg = new Usuarios(nombre, apellido, usuario, mail, password)
+        const userReg = new Usuarios(nombre, apellido, usuario, mail, contraseña)
 
-        UsuariosRegistrados.push(userReg)
+        if (mail.value == "" || apellido.value == "" || nombre.value == "" || contraseña.value == "") {
+            alert ("Por favor completa los campos solicitados")
+            return false;
+        }
+    
+        else if (contraseña.length !=6) {
+            alert ("El password debe tener al menos 6 caracteres")
+            return false;
+        }
+        else {
+            UsuariosRegistrados.push(userReg)
 
-        localStorage.setItem('RegUsuarios', JSON.stringify(UsuariosRegistrados))
-
-        alert('Se ha registrado con exito')
-        window.location.href="./assets/views/login.html"
-		
-    }
-
+            localStorage.setItem('RegUsuarios', JSON.stringify(UsuariosRegistrados))
+    
+            alert('¡Se ha registrado con exito!')
+            window.location.href="./assets/views/login.html"
+        }
+ 	}
+    
     const btnReg = document.getElementById('reg')
 
     btnReg.addEventListener('click', event => {
@@ -46,16 +56,18 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
 //Login//
 if (title === 'HorrorFlix - Login') {
     function login() {
-    	let user = document.getElementById('usuario').value;
+    	let user = document.getElementById('user').value;
     	let password = document.getElementById('password').value;
   
-      	const usuariosFromStorage = JSON.parse(localStorage.getItem('RegUsuarios'));
+      	const usuariosFromStorage = JSON.stringify(localStorage.getItem('RegUsuarios'));
   
       	console.log(usuariosFromStorage);
   
       	if (user === usuariosFromStorage[0].nombre && password === usuariosFromStorage[0].contraseña) 
 	  	{
         	alert('Bienvenido!')
+            window.location.href="./assets/views/principal.html"
+
       	} else {
         	alert('Intente nuevamente')
       	}
@@ -204,4 +216,16 @@ const peliculas = [{
     imagen: "../images/livingdead.jpg",
     actor: "Judith Odea", 
 },
+{
+    id:21,
+    titulo: "Plan 9 from outer space",
+    imagen: "../images/plan9.jpg",
+    actor: "Judith Odea", 
+},
 ]
+
+//Busqueda de peliculas
+function buscarPeliculas() {
+    let encontrado = peliculas.find((Pelicula)=>Pelicula.titulo.toLowerCase().indexOf(titulo.toLocaleLowerCase())!==-1);
+    console.log("RESULTADO DE BUSQUEDA: ", encontrado);  
+}
