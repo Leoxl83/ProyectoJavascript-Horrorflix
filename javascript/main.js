@@ -31,7 +31,7 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
             return false;
         }
     
-        else if (contraseña.length !=6) {
+        else if (contraseña.length <6) {
             alert ("El password debe tener al menos 6 caracteres")
             return false;
         }
@@ -59,11 +59,11 @@ if (title === 'HorrorFlix - Login') {
     	let user = document.getElementById('user').value;
     	let password = document.getElementById('password').value;
   
-      	const usuariosFromStorage = JSON.stringify(localStorage.getItem('RegUsuarios'));
+      	const usuariosFromStorage = JSON.parse(localStorage.getItem('RegUsuarios'));
   
       	console.log(usuariosFromStorage);
   
-      	if (user === usuariosFromStorage[0].nombre && password === usuariosFromStorage[0].contraseña) 
+      	if (user === usuariosFromStorage[0].user && password === usuariosFromStorage[0].contraseña) 
 	  	{
         	alert('Bienvenido!')
             window.location.href="./assets/views/principal.html"
