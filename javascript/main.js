@@ -63,10 +63,10 @@ if (title === 'HorrorFlix - Login') {
   
       	console.log(usuariosFromStorage);
   
-      	if (user === usuariosFromStorage[0].user && password === usuariosFromStorage[0].contraseña) 
+      	if (user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña) 
 	  	{
         	alert('Bienvenido!')
-            window.location.href="./assets/views/principal.html"
+            window.location.href="../views/principal.html"
 
       	} else {
         	alert('Intente nuevamente')
