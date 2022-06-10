@@ -62,15 +62,10 @@ if (title === 'HorrorFlix - Login') {
       	const usuariosFromStorage = JSON.parse(localStorage.getItem('RegUsuarios'));
   
       	console.log(usuariosFromStorage);
-  
-      	if (user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña) 
-	  	{
-        	alert('Bienvenido!')
-            window.location.href="../views/principal.html"
-
-      	} else {
-        	alert('Intente nuevamente')
-      	}
+        
+        //uso operador ternario//  
+      	user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña ? window.location.href="../views/principal.html" : alert('Intente nuevamente')
+      	
     }
   
     const iniciarsession = document.getElementById('login')
