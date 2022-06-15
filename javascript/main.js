@@ -1,7 +1,4 @@
-
 //Registrar Usuarios//
-
-//const usuariosRegistrados = [];
 
 class Usuarios {
     constructor (nombre, apellido, usuario, mail, contraseña) {
@@ -26,30 +23,49 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
 
         const userReg = new Usuarios(nombre, apellido, usuario, mail, contraseña)
 
-        if (mail.value == "" || apellido.value == "" || nombre.value == "" || contraseña.value == "") {
-            alert ("Por favor completa los campos solicitados")
+        if (nombre.value == "" || apellido.value == "" || usuario.value ==""|| mail.value == "" || contraseña.value == "") {
+                      
+            Swal.fire({
+                icon: 'error',
+                title: 'Algo salió mal...',
+                text: 'Por favor completa todos los campos',
+            })     
             return false;
         }
     
         else if (contraseña.length <6) {
-            alert ("El password debe tener al menos 6 caracteres")
+            Swal.fire({
+                icon: 'error',
+                title: 'Algo salió mal...',
+                text: 'El password debe tener al menos 6 caracteres',
+            })
             return false;
         }
         else {
             UsuariosRegistrados.push(userReg)
 
             localStorage.setItem('RegUsuarios', JSON.stringify(UsuariosRegistrados))
-    
-            alert('¡Se ha registrado con exito!')
-            window.location.href="./assets/views/login.html"
-        }
- 	}
-    
+            
+            alertExito();
+        }    
+    }
+
     const btnReg = document.getElementById('reg')
 
     btnReg.addEventListener('click', event => {
         event.preventDefault()
         registro()
+    })
+    
+}
+function alertExito(){
+    Swal.fire({
+        title: 'Registro Exitoso!',
+        text: 'Por favor inicie sesion',
+        icon: 'success',
+        confirmButtonText: 'Iniciar Sesion',
+    }).then((result)=>{
+        window.location="./assets/views/login.html"
     })
 }
 
@@ -64,7 +80,7 @@ if (title === 'HorrorFlix - Login') {
       	console.log(usuariosFromStorage);
         
         //uso operador ternario//  
-      	user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña ? window.location.href="../views/principal.html" : alert('Intente nuevamente')
+      	user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña ? alertExitoLogin() : alertErrorLogin();
       	
     }
   
@@ -77,8 +93,22 @@ if (title === 'HorrorFlix - Login') {
     console.log(document.querySelector('title'))
 }
 
-
-
+function alertExitoLogin(){
+    Swal.fire({
+        title: 'Bienvenido!',
+        icon: 'success',
+        confirmButtonText: 'Vamos!',
+    }).then((result)=>{
+        window.location="../views/principal.html"
+    })
+}
+function alertErrorLogin() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Algo salió mal...',
+        text: 'Usuario y/o password incorrectos, intente nuevamente',
+    })
+}
 
 
 //registro guardado de peliculas//

@@ -4,18 +4,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    
 }
 
 body {
     background-image: url("../images/fondo.jpg");
     background-size: cover;
+    min-height: 100vh;
+    width: 100%;
 }
-.navbar{
-    margin-bottom: 30px;
+.navbar {
+    margin-bottom: 50px;
 }
-
-
 
 #logo {
     margin-top: 22px;
