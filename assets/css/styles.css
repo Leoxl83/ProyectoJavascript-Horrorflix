@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     font-family: 'Raleway', sans-serif;
     
 }
@@ -15,6 +16,35 @@ body {
     min-height: 100vh;
     width: 100%;
 }
+
+.header {
+    height: 130px;
+}
+.header__menu {
+    float: right;
+    margin: 70px 110px; 
+}
+.header__link {
+    display: inline;
+    color: white;
+    text-align: left;
+    padding: 14px 0px;
+    text-decoration: none; 
+}
+.header__link a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+.header__link a:active {
+    background-color: #616161; 
+}
+.header__link a:hover {
+    background-color: #ba3232;
+    border-radius: 8%; 
+}
+
 .navbar {
     margin-bottom: 50px;
 }
@@ -27,6 +57,8 @@ body {
 #logo:hover {
     transform: scale(1.1); 
 }
+
+
 .peliculas {
     display: inline-flex;
     flex-wrap: wrap;

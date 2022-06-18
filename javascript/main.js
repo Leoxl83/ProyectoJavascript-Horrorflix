@@ -1,9 +1,7 @@
 //Registrar Usuarios//
 
 class Usuarios {
-    constructor (nombre, apellido, usuario, mail, contraseña) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    constructor (usuario, mail, contraseña) {
         this.usuario = usuario;
         this.mail=mail;
         this.contraseña=contraseña;
@@ -15,15 +13,13 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
     const UsuariosRegistrados = []
 
     function registro() {
-        let nombre = document.getElementById('nombre').value;
-        let apellido = document.getElementById('apellido').value;
         let usuario = document.getElementById('usuario').value;
         let mail = document.getElementById('mail').value;
         let contraseña = document.getElementById('contraseña').value;
 
-        const userReg = new Usuarios(nombre, apellido, usuario, mail, contraseña)
+        const userReg = new Usuarios(usuario, mail, contraseña)
 
-        if (nombre.value == "" || apellido.value == "" || usuario.value ==""|| mail.value == "" || contraseña.value == "") {
+        if (usuario.value ==""|| mail.value == "" || contraseña.value == "") {
                       
             Swal.fire({
                 icon: 'error',
@@ -116,8 +112,7 @@ class Pelicula {
     constructor(id, titulo, actor) {
         this.id=id;
         this.titulo=titulo;
-        this.actor=actor;
-        
+        this.actor=actor;        
     }
 }
 
