@@ -1,3 +1,16 @@
+let carrito =[];
+
+class Carrito {
+
+    constructor(id, titulo, imagen, precio){
+        this.id=id;
+        this.titulo=titulo;
+        this.imagen=imagen;
+        this.precio=precio;
+    }
+}
+
+
 //Registrar Usuarios//
 
 class Usuarios {
@@ -107,142 +120,7 @@ function alertErrorLogin() {
 }
 
 
-//registro guardado de peliculas//
-class Pelicula {
-    constructor(id, titulo, actor) {
-        this.id=id;
-        this.titulo=titulo;
-        this.actor=actor;        
-    }
-}
 
-const peliculas = [{
-    id:1,
-    titulo: "Frankenstein",
-    imagen: "../images/frankenstein.jpg",
-    actor: "Boris Karloff",
-},
-{
-    id:2,
-    titulo: "Attack of the 50ft woman",
-    imagen: "../images/50woman.jpg",
-    actor: "Boris Karloff", 
-},
-{
-    id:3,
-    titulo: "The Black cat",
-    imagen: "../images/blackcat.jpg",
-    actor: "Boris Karloff", 
-},
-{
-    id:4,
-    titulo: "Bkack Sunday",
-    imagen: "../images/blacksunday.jpg",
-    actor: "Barbara Steele", 
-},
-{
-    id:5,
-    titulo: "The Blob",
-    imagen: "../images/blob.jpg",
-    actor: "Steven Mc Queen", 
-},
-{
-    id:6,
-    titulo: "The Bride of Frankenstein",
-    imagen: "../images/bride.jpg",
-    actor: "Boris Karloff", 
-},
-{
-    id:7,
-    titulo: "Children of the Damned",
-    imagen: "../images/childrenofthedamned.jpg",
-    actor: "Ian Hendry", 
-},
-{
-    id:8,
-    titulo: "The Creature of the black lagoon",
-    imagen: "../images/creatureblacklagoon.jpg",
-    actor: "Richard Carlson", 
-},
-{
-    id:9,
-    titulo: "Die Monster Die",
-    imagen: "../images/diemonsterdie.jpg",
-    actor: "Boris Karloff", 
-},
-{
-    id:10,
-    titulo: "Dracula",
-    imagen: "../images/dracula.jpg",
-    actor: "Bela Lugosi", 
-},
-{
-    id:11,
-    titulo: "The day the earth stood still",
-    imagen: "../images/earthstoodstill.jpg",
-    actor: "Michael Rennie", 
-},
-{
-    id:12,
-    titulo: "Forbidden Planet",
-    imagen: "../images/forbiddenplanet.jpg",
-    actor: "Leslie Nielsen", 
-},
-{
-    id:13,
-    titulo: "House of Wax",
-    imagen: "../images/houseofwax.jpg",
-    actor: "Vincent Price", 
-},
-{
-    id:14,
-    titulo: "House on haunted hill",
-    imagen: "../images/houseonhauntedhill.jpg",
-    actor: "Vincent Price", 
-},
-{
-    id:15,
-    titulo: "Invasion of body snatchers",
-    imagen: "../images/invasionofbodysnatchers.jpg",
-    actor: "Kevin Mc Carthy", 
-},
-{
-    id:16,
-    titulo: "The invisible Man",
-    imagen: "../images/invisibleman.jpg",
-    actor: "Claude Reins", 
-},
-{
-    id:17,
-    titulo: "It came from outer space",
-    imagen: "../images/itcamefromouterspace.jpg",
-    actor: "Richard Carlson", 
-},
-{
-    id:18,
-    titulo: "Phantom of the Opera",
-    imagen: "../images/phantomoftheopera.jpg",
-    actor: "Lon Chaney", 
-},
-{
-    id:19,
-    titulo: "Dr. Jekyll and Mr. Hyde",
-    imagen: "../images/jekyllhyde.jpg",
-    actor: "Fredric March", 
-},
-{
-    id:20,
-    titulo: "Night of the living dead",
-    imagen: "../images/livingdead.jpg",
-    actor: "Judith Odea", 
-},
-{
-    id:21,
-    titulo: "Plan 9 from outer space",
-    imagen: "../images/plan9.jpg",
-    actor: "Judith Odea", 
-},
-]
 
 //Busqueda de peliculas
 function buscarPeliculas() {
