@@ -79,29 +79,34 @@ body {
     padding: 20px; 
 }
 
-.peliculas {
+
+.peliculasLista {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     text-align: center; 
-}
-.peliculas__rectangulo {
-    width: 150px;
-    margin: 15px;
+}   
+.cards_peliculas{
+    width: 230px;
+    margin: 35px;
     background-color: #050505;
-    border-radius: 10px; 
-}
-.peliculaImagen {
-    padding-top: 10px; 
+    border-radius: 10px
 }
 
-.tituloPelicula {
+.cards_peliculas_picture {
+    padding-top: 10px; 
+    width: 200px;
+} 
+
+ .peliculas_content {
     margin-bottom: 10px;
     color: ivory;
     text-align:center;
     font-size: 14px
-}
+}  
+
+
 
 .form-register {
     width: 400px;
@@ -150,7 +155,7 @@ body {
     text-decoration: underline;
 }
   
-.btn {
+.btn{
     width: 100%;
     height: 40px;
     background: #1f53c5;
@@ -162,7 +167,10 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-
+button{
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+}
 
 .table{
     background-color: bisque;

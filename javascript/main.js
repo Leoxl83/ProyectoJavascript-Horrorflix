@@ -1,16 +1,3 @@
-let carrito =[];
-
-class Carrito {
-
-    constructor(id, titulo, imagen, precio){
-        this.id=id;
-        this.titulo=titulo;
-        this.imagen=imagen;
-        this.precio=precio;
-    }
-}
-
-
 //Registrar Usuarios//
 
 class Usuarios {
@@ -120,10 +107,39 @@ function alertErrorLogin() {
 }
 
 
+cargarPelis()
+function cargarPelis(){
+    fetch("../../peliculas.json")
+        .then((response)=>response.json())
+        .then((json)=> displayInPage(json))
+}
+let divContainer = document.querySelector(".peliculasLista")
 
 
-//Busqueda de peliculas
+function displayInPage(arrayConPeliculas) {
+    arrayConPeliculas.forEach(element => {
+        console.log(element)
+        let divPelicula = document.createElement("div");
+
+        divPelicula.classList = "cards_peliculas"
+
+        divPelicula.innerHTML = `
+            <picture>
+                <img class="cards_peliculas_picture" src="${element.imagen}" alt="${element.id}">
+            </picture>
+            <div class="peliculas_content">
+               <h4> ${element.titulo}</h4>
+            </div>`;
+        divContainer.appendChild(divPelicula);
+
+        let button = document.createElement("button")
+        button.innerHTML = "Agregar a Favoritos"
+
+        divPelicula.appendChild(button)
+    })}
+
+/* //Busqueda de peliculas
 function buscarPeliculas() {
     let encontrado = peliculas.find((Pelicula)=>Pelicula.titulo.toLowerCase().indexOf(titulo.toLocaleLowerCase())!==-1);
     console.log("RESULTADO DE BUSQUEDA: ", encontrado);  
-}
+} */    
