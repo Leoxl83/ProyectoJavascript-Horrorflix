@@ -19,12 +19,13 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
 
         const userReg = new Usuarios(usuario, mail, contraseña)
 
-        if (usuario.value ==""|| mail.value == "" || contraseña.value == "") {
+        if (usuario.value ===""|| mail.value === "" || contraseña.value === "") {
                       
             Swal.fire({
                 icon: 'error',
                 title: 'Algo salió mal...',
                 text: 'Por favor completa todos los campos',
+                confirmButtonColor: "#ba3232"
             })     
             return false;
         }
@@ -34,6 +35,7 @@ if (title === 'HorrorFlix - Registrate es gratis!') {
                 icon: 'error',
                 title: 'Algo salió mal...',
                 text: 'El password debe tener al menos 6 caracteres',
+                confirmButtonColor: "#ba3232"
             })
             return false;
         }
@@ -59,6 +61,7 @@ function alertExito(){
         title: 'Registro Exitoso!',
         text: 'Por favor inicie sesion',
         icon: 'success',
+        confirmButtonColor: "#ba3232",
         confirmButtonText: 'Iniciar Sesion',
     }).then((result)=>{
         window.location="./assets/views/login.html"
@@ -94,6 +97,7 @@ function alertExitoLogin(){
         title: 'Bienvenido!',
         icon: 'success',
         confirmButtonText: 'Vamos!',
+        confirmButtonColor: "#ba3232",
     }).then((result)=>{
         window.location="../views/principal.html"
     })
@@ -103,6 +107,7 @@ function alertErrorLogin() {
         icon: 'error',
         title: 'Algo salió mal...',
         text: 'Usuario y/o password incorrectos, intente nuevamente',
+        confirmButtonColor: "#ba3232",
     })
 }
 

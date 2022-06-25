@@ -6,39 +6,45 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Raleway', sans-serif;
-    
 }
 
 body {
     background-image: url("../images/fondo.jpg");
-    background-size: cover;
+    background-size: 100%;
     min-height: 100vh;
     width: 100%;
 }
 
+
 .header {
     height: 130px;
+    
 }
+
 .header__menu {
     float: right;
     margin: 70px 110px; 
 }
+
 .header__link {
     display: inline;
     color: white;
     text-align: left;
     padding: 14px 0px;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 .header__link a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none; 
 }
+
 .header__link a:active {
     background-color: #616161; 
 }
+
 .header__link a:hover {
     background-color: #ba3232;
     border-radius: 8%; 
@@ -46,6 +52,9 @@ body {
 
 .navbar {
     margin-bottom: 50px;
+    background-color:#202020;
+    height: 140px;
+    
 }
 
 #logo {
@@ -53,6 +62,7 @@ body {
     margin-left:75px;
     transition: 0.5s all ease-in-out; 
 }
+
 #logo:hover {
     transform: scale(1.1); 
 }
@@ -69,16 +79,17 @@ body {
     height: 70px;
     padding: 0px 10px 20px 10px; 
 }
+
 .footer__copyright {
     background-color: #202020;
     text-align: center;
     padding: 10px 0px;
     margin: 0 -10px -10px -10px; 
 }
+
 .tituloRedes {
     padding: 20px; 
 }
-
 
 .peliculasLista {
     display: inline-flex;
@@ -87,6 +98,7 @@ body {
     width: 100%;
     text-align: center; 
 }   
+
 .cards_peliculas{
     width: 230px;
     margin: 35px;
@@ -99,14 +111,12 @@ body {
     width: 200px;
 } 
 
- .peliculas_content {
+.peliculas_content {
     margin-bottom: 10px;
     color: ivory;
     text-align:center;
     font-size: 14px
 }  
-
-
 
 .form-register {
     width: 400px;
@@ -132,7 +142,7 @@ body {
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid #1f53c5;
+    border: 1px solid #ba3232;
     font-family: 'raleway';
     font-size: 18px;
     color: white;
@@ -158,18 +168,31 @@ body {
 .btn{
     width: 100%;
     height: 40px;
-    background: #1f53c5;
+    background: #ba3232;
     font-family: "Raleway", sans-serif;
     text-align: center;
-    padding: 12px;
+    padding: 8px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
     cursor: pointer;
 }
+
 button{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-family: "Raleway", sans-serif;
+    cursor: pointer;
+}
+
+.vaciarFav {
+    font-family: "Raleway", sans-serif;
+    width: 100px;
+    height: 40px;
+    background-color: #ba3232;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+   
 }
 
 .table{

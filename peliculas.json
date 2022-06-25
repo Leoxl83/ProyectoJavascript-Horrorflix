@@ -2,196 +2,235 @@
   {
     "id": 1,
     "titulo": "Frankenstein",
-    "imagen": "../../assets/images/frankenstein.jpg"
+    "imagen": "../../assets/images/frankenstein.jpg",
+    "sinopsis": "Henry Von Frankenstein es un doctor que decide llevar a cabo un experimento un tanto tenebroso: pretende crear un nuevo ser humano utilizando fragmentos de cadáveres. Su fiel criado Fritz será su aliado en el proyecto y, con su ayuda, se adentran en los cementerios cercanos para conseguir la materia prima. Lo que el doctor no sabe es que el cerebro que utilizado pertenecía a un criminal, condenando al monstruo al odio."
   },
   {
     "id": 2,
     "titulo": "Attack of the 50ft woman",
-    "imagen": "../../assets/images/50woman.jpg"
+    "imagen": "../../assets/images/50woman.jpg",
+    "sinopsis": "Tras una pelea con su marido, Nancy se va en coche a desahogarse. Es entonces cuando tiene un encuentro con los alienígenas, pero nadie le cree. Pese a todo, no solamente tiene contacto con extraterrestres una vez sino dos. En la última ocasión, Nancy se transforma y decide, por fin, cometer venganza contra su marido."
   },
   {
     "id": 3,
     "titulo": "The Black cat",
-    "imagen": "../../assets/images/blackcat.jpg"
+    "imagen": "../../assets/images/blackcat.jpg",
+    "sinopsis": "Una pareja de recién casados que se encuentran disfrutando de su viaje de novios conocen a un misterioso hombre llamado Vitus Verdegast, que ha pasado los últimos quince años encerrado en una prisión. Tras un accidente en una lluviosa noche los tres tendrán que pernoctar en el hogar del arquitecto Hjalmar Poelzig, antiguo amigo de Vitus."
   },
   {
     "id": 4,
-    "titulo": "Bkack Sunday",
-    "imagen": "../../assets/images/blacksunday.jpg"
+    "titulo": "Black Sunday",
+    "imagen": "../../assets/images/blacksunday.jpg",
+    "sinopsis": "Durante la Edad Media, la Inquisición rusa condena a muerte a una pareja de amantes que practican la brujería y los ejecuta poniéndoles una máscara con púas en su interior. Siglos después, sus ataúdes son encontrados y abiertos por dos viajeros. Al retirar las máscaras de los cadáveres, los brujos vuelven a la vida y siembran el pánico entre los habitantes del lugar."
   },
   {
     "id": 5,
     "titulo": "The Blob",
-    "imagen": "../../assets/images/blob.jpg"
+    "imagen": "../../assets/images/blob.jpg",
+    "sinopsis": "A partir de la caída de un meteorito cerca de la ciudad de Pensilvania, una sustancia viscosa sin forma amenaza con devorar y destruir todo lo que encuentra a su paso. Steve y sus amigos harán todo lo posible para advertir a la ciudad que las vidas de todos se encuentran en peligro."
   },
   {
     "id": 6,
     "titulo": "The Bride of Frankenstein",
-    "imagen": "../../assets/images/bride.jpg"
+    "imagen": "../../assets/images/bride.jpg",
+    "sinopsis": "Tras la supuesta muerte del monstruo, el doctor Frankenstein decide abandonar sus experimentos sobre reanimación para dedicar más tiempo a su esposa Elizabeth. Pero otro científico, el doctor Pretorius desea crear una compañera al monstruo, por lo que pero cuando Frankenstein se niega a ayudarle, Pretorius decide secuestrar a Elizabeth y forzar al doctor a generar una nueva criatura."
   },
   {
     "id": 7,
     "titulo": "Children of the Damned",
-    "imagen": "../../assets/images/childrenofthedamned.jpg"
+    "imagen": "../../assets/images/childrenofthedamned.jpg",
+    "sinopsis": "Científicos provocan una catástrofe cuando intentan estudiar a seis niños con poderes sobrenaturales."
   },
   {
     "id": 8,
     "titulo": "The Creature of the black lagoon",
-    "imagen": "../../assets/images/creatureblacklagoon.jpg"
+    "imagen": "../../assets/images/creatureblacklagoon.jpg",
+    "sinopsis": "Cazadores de fósiles descubren a un peligroso anfibio en forma de humano en su travesía por el Amazonas. Una anomalía genética ha llevado a la creación de esta bestia entre anfibio y hombre."
   },
   {
     "id": 9,
     "titulo": "Die Monster Die",
-    "imagen": "../../assets/images/diemonsterdie.jpg"
+    "imagen": "../../assets/images/diemonsterdie.jpg",
+    "sinopsis": "Un joven estadounidense viaja a Inglaterra para casarse, pero en el sótano de la mansión de su prometida descubre un meteorito que provoca mutaciones."
   },
   {
     "id": 10,
     "titulo": "Dracula",
-    "imagen": "../../assets/images/dracula.jpg"
+    "imagen": "../../assets/images/dracula.jpg",
+    "sinopsis": "Un agente de bienes raíces visita un castillo en Transilvania, propiedad del misterioso conde Drácula, que busca mudarse a un castillo en Londres."
   },
   {
     "id": 11,
     "titulo": "The day the earth stood still",
-    "imagen": "../../assets/images/earthstoodstill.jpg"
+    "imagen": "../../assets/images/earthstoodstill.jpg",
+    "sinopsis": "Un alienígena aterriza en Washington D.C. y dice a los habitantes de la Tierra que deben vivir en paz o ser destruidos por ser un peligro para otros planetas."
   },
   {
     "id": 12,
     "titulo": "Forbidden Planet",
-    "imagen": "../../assets/images/forbiddenplanet.jpg"
+    "imagen": "../../assets/images/forbiddenplanet.jpg",
+    "sinopsis": "Siglo XXIII. Una expedición espacial liderada por el comandante John J. Adams se dirige al planeta Altair-4 con la misión de intentar averiguar el destino de los miembros de una colonia de la que no se tienen noticias recientes."
   },
   {
     "id": 13,
     "titulo": "House of Wax",
-    "imagen": "../../assets/images/houseofwax.jpg"
+    "imagen": "../../assets/images/houseofwax.jpg",
+    "sinopsis": "El escultor de un museo de cera tiene una fuerte discusión con su socio, porque este pretende incendiar el local para cobrar el seguro. Años después, mientras el profesor Jarrod intenta reconstruir el museo, se producen extrañas desapariciones."
   },
   {
     "id": 14,
     "titulo": "House on haunted hill",
-    "imagen": "../../assets/images/houseonhauntedhill.jpg"
+    "imagen": "../../assets/images/houseonhauntedhill.jpg",
+    "sinopsis": "Un excéntrico millonario invita a cinco personas a su mansión, donde se dice que se han cometido crímenes. Les ofrece 10.000 dólares por pasar la noche allí, incomunicados, hasta que vuelvan los criados. Los invitados no se conocen entre sí ni tampoco al anfitrión, pero necesitan dinero. En un momento dado, empiezan a ocurrir sucesos extraños en la casa."
   },
   {
     "id": 15,
     "titulo": "Invasion of body snatchers",
-    "imagen": "../../assets/images/invasionofbodysnatchers.jpg"
+    "imagen": "../../assets/images/invasionofbodysnatchers.jpg",
+    "sinopsis": "En una pequeña ciudad de California empiezan a suceder cosas muy extrañas: el comportamiento de algunas personas cambia de tal manera que causa estupor e incluso miedo entre sus parientes y amigos."
   },
   {
     "id": 16,
     "titulo": "The invisible Man",
-    "imagen": "../../assets/images/invisibleman.jpg"
+    "imagen": "../../assets/images/invisibleman.jpg",
+    "sinopsis": "Adaptación de una novela de H.G. Wells sobre un hombre que posee la facultad de hacerse invisible."
   },
   {
     "id": 17,
     "titulo": "It came from outer space",
-    "imagen": "../../assets/images/itcamefromouterspace.jpg"
+    "imagen": "../../assets/images/itcamefromouterspace.jpg",
+    "sinopsis": "Un astrónomo aficionado y su prometida contemplan las estrellas en el desierto cuando una nave espacial atraviesa el cielo y choca contra el suelo. Justo antes de que un corrimiento de tierras entierre la nave, una misteriosa criatura emerge y desaparece en la oscuridad. Cuando cuenta la historia al sheriff, nadie le cree, pero pronto empiezan a suceder cosas extrañas..."
   },
   {
     "id": 18,
     "titulo": "Dr. Jekyll and Mr. Hyde",
-    "imagen": "../../assets/images/jekyllhyde.jpg"
+    "imagen": "../../assets/images/jekyllhyde.jpg",
+    "sinopsis": "El Dr Jekyll se enfrenta a consecuencias terrible cuando da rienda suelta a su lado oscuro con una poción salvaje que lo transforma en el animalístico Mr Hyde."
   },
   {
     "id": 19,
     "titulo": "Night of the living dead",
-    "imagen": "../../assets/images/livingdead.jpg"
+    "imagen": "../../assets/images/livingdead.jpg",
+    "sinopsis": "Un grupo irregular de residentes de Pensilvania se atrinchera en una antigua granja para mantenerse a salvo de una raza de monstruos sedientos de sangre y carne que están devastando la costa este de los Estados Unidos."
   },
   {
     "id": 20,
     "titulo": "Phantom of the Opera",
-    "imagen": "../../assets/images/phantomoftheopera.jpg"
+    "imagen": "../../assets/images/phantomoftheopera.jpg",
+    "sinopsis": "Un compositor loco y desfigurado busca el amor con un joven cantante de ópera encantador."
   },
   {
     "id": 21,
     "titulo": "Plan 9 from outer space",
-    "imagen": "../../assets/images/plan9.jpg"
+    "imagen": "../../assets/images/plan9.jpg",
+    "sinopsis": "Los malvados alienígenas atacan la Tierra y ponen en marcha su terrible Plan 9. Mientras los alienígenas resucitan a los muertos de la Tierra, las vidas de los vivos están en peligro."
   },
   {
     "id": 22,
     "titulo": "Psycho",
-    "imagen": "../../assets/images/psycho.jpg"
+    "imagen": "../../assets/images/psycho.jpg",
+    "sinopsis": "Una secretaria de Phoenix malversa cuarenta mil dólares de un cliente, se da a la fuga y se registra en un motel remoto administrado por un joven con una controladora madre."
   },
   {
     "id": 23,
     "titulo": "Puppet People",
-    "imagen": "../../assets/images/puppetpeople.jpg"
+    "imagen": "../../assets/images/puppetpeople.jpg",
+    "sinopsis": "Un maestro de marionetas solitario y desquiciado diseña una máquina que encoge a la gente."
   },
   {
     "id": 24,
     "titulo": "The Raven",
-    "imagen": "../../assets/images/raven.jpg"
+    "imagen": "../../assets/images/raven.jpg",
+    "sinopsis": "El Dr. Vollin es un brillante pero inestable cirujano con una morbosa obsesión por los instrumentos de tortura."
   },
   {
     "id": 25,
     "titulo": "Robot Monster",
-    "imagen": "../../assets/images/robotmonster.jpg"
+    "imagen": "../../assets/images/robotmonster.jpg",
+    "sinopsis": "El monstruoso Ro-Man intenta aniquilar a la última familia viva en la Tierra, pero se enamora de su hermosa hija."
   },
   {
     "id": 26,
     "titulo": "Tarantula",
-    "imagen": "../../assets/images/tarantula.jpg"
+    "imagen": "../../assets/images/tarantula.jpg",
+    "sinopsis": "Una araña escapa de un laboratorio aislado del desierto de Arizona que experimenta con gigantismo y crece hasta alcanzar un tamaño enorme y causa estragos entre los habitantes locales."
   },
   {
     "id": 27,
     "titulo": "The Alligator People",
-    "imagen": "../../assets/images/thealligatorpeople.jpg"
+    "imagen": "../../assets/images/thealligatorpeople.jpg",
+    "sinopsis": "Una mujer hipnotizada le relata a dos doctores los detalles de una experiencia horrorifica de su pasado que comienza con la desaparición misteriosa y repentina de su esposo."
   },
   {
     "id": 28,
     "titulo": "The Crawling Eye",
-    "imagen": "../../assets/images/thecrawlingeye.jpg"
+    "imagen": "../../assets/images/thecrawlingeye.jpg",
+    "sinopsis": "Una serie de decapitaciones en la ladera de una montaña suiza parecen estar relacionadas con una misteriosa nube radiactiva."
   },
   {
     "id": 29,
     "titulo": "The Fly",
-    "imagen": "../../assets/images/thefly.jpg"
+    "imagen": "../../assets/images/thefly.jpg",
+    "sinopsis": "Un científico sufre un terrible accidente cuando pone a prueba su nuevo aparato de teletransporte."
   },
   {
     "id": 30,
     "titulo": "The giant leeches",
-    "imagen": "../../assets/images/thegiantleeches.jpg"
+    "imagen": "../../assets/images/thegiantleeches.jpg",
+    "sinopsis": "Un guardabosques y un médico local descubren que unas sanguijuelas gigantes son las responsables de las desapariciones y muertes en un pantano local"
   },
   {
     "id": 31,
     "titulo": "Them",
-    "imagen": "../../assets/images/them.jpg"
+    "imagen": "../../assets/images/them.jpg",
+    "sinopsis": "Las primeras pruebas atómicas en Nuevo México hacen que las hormigas comunes muten en gigantescos monstruos devoradores de hombres que amenazan la civilización."
   },
   {
     "id": 32,
     "titulo": "The mole people",
-    "imagen": "../../assets/images/themolepeople.jpg"
+    "imagen": "../../assets/images/themolepeople.jpg",
+    "sinopsis":"Un grupo de arqueólogos descubre los restos de una civilización sumeria mutante de cinco milenios de antigüedad"
   },
   {
     "id": 33,
     "titulo": "The mummy",
-    "imagen": "../../assets/images/themummy.jpg"
+    "imagen": "../../assets/images/themummy.jpg",
+    "sinopsis": "Una momia egipcia busca en El Cairo a la chica que cree que es su princesa perdida."
   },
   {
     "id": 34,
     "titulo": "The thing that couldnt die",
-    "imagen": "../../assets/images/thething.jpg"
+    "imagen": "../../assets/images/thething.jpg",
+    "sinopsis": "Una joven con dotes psíquicas descubre una caja centenaria enterrada en el rancho de su tía. Al abrirla, su familia descubre la cabeza viva de Gideon Drew, un adorador del diablo del siglo XVI"
   },
   {
     "id": 35,
     "titulo": "The tingler",
-    "imagen": "../../assets/images/thetingler.jpg"
+    "imagen": "../../assets/images/thetingler.jpg",
+    "sinopsis": "Un patólogo obsesionado descubre y captura una criatura parasitaria que crece cuando el miedo se apodera de su huésped."
   },
   {
     "id": 36,
     "titulo": "The thing",
-    "imagen": "../../assets/images/thing.jpg"
+    "imagen": "../../assets/images/thing.jpg",
+    "sinopsis": "Científicos y oficiales de las Fuerzas Aéreas de los Estados Unidos luchan contra un organismo alienígena sediento de sangre en un remoto puesto del Ártico."
   },
   {
     "id": 37,
     "titulo": "This island earth",
-    "imagen": "../../assets/images/thisislandearth.jpg"
+    "imagen": "../../assets/images/thisislandearth.jpg",
+    "sinopsis": "Los extraterrestres vienen a la Tierra buscando científicos para ayudarlos en su guerra."
   },
   {
     "id": 38,
     "titulo": "Walked with a zombie",
-    "imagen": "../../assets/images/walkedwithazombie.jpg"
+    "imagen": "../../assets/images/walkedwithazombie.jpg",
+    "sinopsis": "Una enfermera es contratada para cuidar a la esposa del dueño de una plantación de azúcar en una isla del Caribe, que ha estado actuando de forma extraña."
   },
   {
     "id": 39,
     "titulo": "The wolfman",
-    "imagen": "../../assets/images/wolfman.jpg"
+    "imagen": "../../assets/images/wolfman.jpg",
+    "sinopsis": "Larry Talbot regresa al castillo de su padre en Gales y conoce a una hermosa mujer. Una noche, Talbot la acompaña a un carnaval local donde conocen a una misteriosa adivina gitana..."
   }
 ]
