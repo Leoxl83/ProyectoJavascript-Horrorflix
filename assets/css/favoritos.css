@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-image: url("../images/fondo.jpg");
+    background-size: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    height: 130px;
+}
+
+.header__menu {
+    float: right;
+    margin: 70px 110px;
+}
+
+.header__link {
+    display: inline;
+    color: white;
+    text-align: left;
+    padding: 14px 0px;
+    text-decoration: none;
+}
+
+.header__link a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header__link a:active {
+    background-color: #616161;
+}
+
+.header__link a:hover {
+    background-color: #ba3232;
+    border-radius: 8%;
+}
+
+.navbar {
+    margin-bottom: 50px;
+    background-color: #202020;
+    height: 140px;
+}
+
+#logo {
+    margin-top: 22px;
+    margin-left: 75px;
+    transition: 0.5s all ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+button {
+    margin-bottom: 15px;
+    margin-right: 100px;
+    background: #ba3232;
+    color: white;
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+}
+
+.table {
+    background-color: rgba(96, 94, 92, 0.793);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+picture img {
+    width: 200px;
+    margin: 50px 10px 10px 100px;
+}
+
+th {
+    font-size: x-large;
+}
+
+.vaciarFav {
+    font-family: "Raleway", sans-serif;
+    width: 100px;
+    height: 40px;
+    background-color: #ba3232;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}

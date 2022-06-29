@@ -1,5 +1,5 @@
 /*Normalize*/
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,15 +15,14 @@ body {
     width: 100%;
 }
 
-
 .header {
     height: 130px;
-    
+
 }
 
 .header__menu {
     float: right;
-    margin: 70px 110px; 
+    margin: 70px 110px;
 }
 
 .header__link {
@@ -38,57 +37,57 @@ body {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .header__link a:active {
-    background-color: #616161; 
+    background-color: #616161;
 }
 
 .header__link a:hover {
     background-color: #ba3232;
-    border-radius: 8%; 
+    border-radius: 8%;
 }
 
 .navbar {
     margin-bottom: 50px;
-    background-color:#202020;
+    background-color: #202020;
     height: 140px;
-    
+
 }
 
 #logo {
     margin-top: 22px;
-    margin-left:75px;
-    transition: 0.5s all ease-in-out; 
+    margin-left: 75px;
+    transition: 0.5s all ease-in-out;
 }
 
 #logo:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .footer {
     background-color: #363836;
     color: #ba3232;
     padding: 10px;
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .footer__copyright__icono {
     width: 70px;
     height: 70px;
-    padding: 0px 10px 20px 10px; 
+    padding: 0px 10px 20px 10px;
 }
 
 .footer__copyright {
     background-color: #202020;
     text-align: center;
     padding: 10px 0px;
-    margin: 0 -10px -10px -10px; 
+    margin: 0 -10px -10px -10px;
 }
 
 .tituloRedes {
-    padding: 20px; 
+    padding: 20px;
 }
 
 .peliculasLista {
@@ -96,27 +95,27 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    text-align: center; 
-}   
+    text-align: center;
+}
 
-.cards_peliculas{
+.cards_peliculas {
     width: 230px;
     margin: 35px;
     background-color: #050505;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .cards_peliculas_picture {
-    padding-top: 10px; 
+    padding-top: 10px;
     width: 200px;
-} 
+}
 
 .peliculas_content {
     margin-bottom: 10px;
     color: ivory;
-    text-align:center;
+    text-align: center;
     font-size: 14px
-}  
+}
 
 .form-register {
     width: 400px;
@@ -129,13 +128,13 @@ body {
     color: white;
     box-shadow: 7px 13px 37px #000;
 }
-  
+
 .form-register h4 {
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
 }
-  
+
 .inputs {
     width: 100%;
     background: #24303c;
@@ -147,25 +146,25 @@ body {
     font-size: 18px;
     color: white;
 }
-  
+
 .form-register p {
     height: 40px;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
 }
-  
+
 .form-register a {
     color: white;
     text-decoration: none;
 }
-  
+
 .form-register a:hover {
     color: white;
     text-decoration: underline;
 }
-  
-.btn{
+
+.btn {
     width: 100%;
     height: 40px;
     background: #ba3232;
@@ -178,27 +177,17 @@ body {
     cursor: pointer;
 }
 
-button{
+button {
     margin-bottom: 15px;
-    font-family: "Raleway", sans-serif;
-    cursor: pointer;
-}
-
-.vaciarFav {
-    font-family: "Raleway", sans-serif;
-    width: 100px;
-    height: 40px;
-    background-color: #ba3232;
-    cursor: pointer;
+    background: #ba3232;
     color: white;
-    margin: 10px;
-   
+    padding: 8px;
+    font-family: "Raleway", sans-serif;
+    cursor: pointer;
 }
 
-.table{
-    background-color: bisque;
-    width: 100%;
-    align-items:center;
-    justify-content: space-between  ;
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
 }
-

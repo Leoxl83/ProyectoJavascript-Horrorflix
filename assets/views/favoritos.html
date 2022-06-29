@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="../css/favoritos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <title>Horrorflix | Carrito</title>
+    <title>Horrorflix | Favoritos</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
-            <a href="#">
+            <a href="../views/principal.html">
                 <img id="logo" src="../images/logo-hf.png" alt="logo horrorflix" width="170px"></img>
             </a>
             <ul class="header__menu">
@@ -24,20 +27,28 @@
         </nav>
     </header>
 
-    <table class="table table-danger text-center">
-        <thead>
-            <tr>
-                <th>Imagen</th>
-                <th>Titulo</th>
-                <th>Descripcion</th>
-                <th><button class="vaciarFav">Vaciar Favoritos</button></th>
-            </tr>
-        </thead>
-        <tbody id="tbody"></tbody>
-    </table>
+    <section>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Pelicula</th>
+                        <th>Titulo</th>
+                        <th>Sinopsis</th>
+                        <th><button class="vaciarFavoritosButton">Vaciar</button></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+        </div>
+    </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
     <script src="../../javascript/favoritos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
+
 </html>

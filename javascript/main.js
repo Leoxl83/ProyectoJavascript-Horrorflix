@@ -1,150 +1,197 @@
+let favoritos = [];
+
+class AFavoritos {
+  constructor(id, imagen, titulo, sinopsis) {
+    this.id = id;
+    this.imagen = imagen;
+    this.titulo = titulo;
+    this.sinopsis = sinopsis;
+  }
+}
+
 //Registrar Usuarios//
 
 class Usuarios {
-    constructor (usuario, mail, contraseña) {
-        this.usuario = usuario;
-        this.mail=mail;
-        this.contraseña=contraseña;
-    }
+  constructor(usuario, mail, contraseña) {
+    this.usuario = usuario;
+    this.mail = mail;
+    this.contraseña = contraseña;
+  }
 }
 
-let title = document.querySelector('title').textContent
-if (title === 'HorrorFlix - Registrate es gratis!') {
-    const UsuariosRegistrados = []
+let title = document.querySelector("title").textContent;
+if (title === "HorrorFlix - Registrate es gratis!") {
+  const UsuariosRegistrados = [];
 
-    function registro() {
-        let usuario = document.getElementById('usuario').value;
-        let mail = document.getElementById('mail').value;
-        let contraseña = document.getElementById('contraseña').value;
+  function registro() {
+    let usuario = document.getElementById("usuario").value;
+    let mail = document.getElementById("mail").value;
+    let contraseña = document.getElementById("contraseña").value;
 
-        const userReg = new Usuarios(usuario, mail, contraseña)
+    const userReg = new Usuarios(usuario, mail, contraseña);
 
-        if (usuario.value ===""|| mail.value === "" || contraseña.value === "") {
-                      
-            Swal.fire({
-                icon: 'error',
-                title: 'Algo salió mal...',
-                text: 'Por favor completa todos los campos',
-                confirmButtonColor: "#ba3232"
-            })     
-            return false;
-        }
-    
-        else if (contraseña.length <6) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Algo salió mal...',
-                text: 'El password debe tener al menos 6 caracteres',
-                confirmButtonColor: "#ba3232"
-            })
-            return false;
-        }
-        else {
-            UsuariosRegistrados.push(userReg)
-
-            localStorage.setItem('RegUsuarios', JSON.stringify(UsuariosRegistrados))
-            
-            alertExito();
-        }    
-    }
-
-    const btnReg = document.getElementById('reg')
-
-    btnReg.addEventListener('click', event => {
-        event.preventDefault()
-        registro()
-    })
-    
-}
-function alertExito(){
-    Swal.fire({
-        title: 'Registro Exitoso!',
-        text: 'Por favor inicie sesion',
-        icon: 'success',
+    if (usuario.value === "" || mail.value === "" || contraseña.value === "") {
+      Swal.fire({
+        icon: "error",
+        title: "Algo salió mal...",
+        text: "Por favor completa todos los campos",
         confirmButtonColor: "#ba3232",
-        confirmButtonText: 'Iniciar Sesion',
-    }).then((result)=>{
-        window.location="./assets/views/login.html"
-    })
+      });
+      return false;
+    } else if (contraseña.length < 6) {
+      Swal.fire({
+        icon: "error",
+        title: "Algo salió mal...",
+        text: "El password debe tener al menos 6 caracteres",
+        confirmButtonColor: "#ba3232",
+      });
+      return false;
+    } else {
+      UsuariosRegistrados.push(userReg);
+
+      localStorage.setItem("RegUsuarios", JSON.stringify(UsuariosRegistrados));
+
+      alertExito();
+    }
+  }
+
+  const btnReg = document.getElementById("reg");
+
+  btnReg.addEventListener("click", (event) => {
+    event.preventDefault();
+    registro();
+  });
+}
+function alertExito() {
+  Swal.fire({
+    title: "Registro Exitoso!",
+    text: "Por favor inicie sesion",
+    icon: "success",
+    confirmButtonColor: "#ba3232",
+    confirmButtonText: "Iniciar Sesion",
+  }).then((result) => {
+    window.location = "./assets/views/login.html";
+  });
 }
 
 //Login//
-if (title === 'HorrorFlix - Login') {
-    function login() {
-    	let user = document.getElementById('user').value;
-    	let password = document.getElementById('password').value;
-  
-      	const usuariosFromStorage = JSON.parse(localStorage.getItem('RegUsuarios'));
-  
-      	console.log(usuariosFromStorage);
-        
-        //uso operador ternario//  
-      	user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña ? alertExitoLogin() : alertErrorLogin();
-      	
-    }
-  
-    const iniciarsession = document.getElementById('login')
-  
-    iniciarsession.addEventListener('click', event => {
-      	event.preventDefault()
-      	login()
-    })
-    console.log(document.querySelector('title'))
+if (title === "HorrorFlix - Login") {
+  function login() {
+    let user = document.getElementById("user").value;
+    let password = document.getElementById("password").value;
+
+    const usuariosFromStorage = JSON.parse(localStorage.getItem("RegUsuarios"));
+
+    console.log(usuariosFromStorage);
+
+    //uso operador ternario//
+    user === usuariosFromStorage[0].usuario &&
+      password === usuariosFromStorage[0].contraseña
+      ? alertExitoLogin()
+      : alertErrorLogin();
+  }
+
+  const iniciarsession = document.getElementById("login");
+
+  iniciarsession.addEventListener("click", (event) => {
+    event.preventDefault();
+    login();
+  });
+  console.log(document.querySelector("title"));
 }
 
-function alertExitoLogin(){
-    Swal.fire({
-        title: 'Bienvenido!',
-        icon: 'success',
-        confirmButtonText: 'Vamos!',
-        confirmButtonColor: "#ba3232",
-    }).then((result)=>{
-        window.location="../views/principal.html"
-    })
+function alertExitoLogin() {
+  Swal.fire({
+    title: "Bienvenido!",
+    icon: "success",
+    confirmButtonText: "Vamos!",
+    confirmButtonColor: "#ba3232",
+  }).then((result) => {
+    window.location = "../views/principal.html";
+  });
 }
 function alertErrorLogin() {
-    Swal.fire({
-        icon: 'error',
-        title: 'Algo salió mal...',
-        text: 'Usuario y/o password incorrectos, intente nuevamente',
-        confirmButtonColor: "#ba3232",
-    })
+  Swal.fire({
+    icon: "error",
+    title: "Algo salió mal...",
+    text: "Usuario y/o password incorrectos, intente nuevamente",
+    confirmButtonColor: "#ba3232",
+  });
 }
 
-
-cargarPelis()
-function cargarPelis(){
-    fetch("../../peliculas.json")
-        .then((response)=>response.json())
-        .then((json)=> displayInPage(json))
+cargarPelis();
+function cargarPelis() {
+  fetch("../../peliculas.json")
+    .then((response) => response.json())
+    .then((json) => mostrarEnPrincipal(json));
 }
-let divContainer = document.querySelector(".peliculasLista")
+let divContainer = document.querySelector(".peliculasLista");
 
+function mostrarEnPrincipal(arrayConPeliculas) {
+  arrayConPeliculas.forEach((element) => {
+    //   console.log(element)
+    let divPelicula = document.createElement("div");
 
-function displayInPage(arrayConPeliculas) {
-    arrayConPeliculas.forEach(element => {
-        console.log(element)
-        let divPelicula = document.createElement("div");
+    divPelicula.classList = "cards_peliculas";
 
-        divPelicula.classList = "cards_peliculas"
-
-        divPelicula.innerHTML = `
+    divPelicula.innerHTML = `
             <picture>
                 <img class="cards_peliculas_picture" src="${element.imagen}" alt="${element.id}">
             </picture>
             <div class="peliculas_content">
-               <h4> ${element.titulo}</h4>
+               <h3> ${element.titulo}</h3>
             </div>`;
-        divContainer.appendChild(divPelicula);
+    divContainer.appendChild(divPelicula);
 
-        let button = document.createElement("button")
-        button.innerHTML = "Agregar a Favoritos"
+    let favoritosLocalStorage = JSON.parse(localStorage.getItem("carrito"));
+    if (favoritosLocalStorage) {
+      favoritosLink(favoritosLocalStorage);
+    }
 
-        divPelicula.appendChild(button)
-    })}
+    let button = document.createElement("button");
+    button.innerHTML = "Agregar a Favoritos";
+
+    divPelicula.appendChild(button);
+
+    button.addEventListener("click", () => {
+      let getFavoritosStorage = JSON.parse(localStorage.getItem("favoritos"));
+
+      if (getFavoritosStorage) {
+        favoritos = getFavoritosStorage;
+      }
+      let id = element.id;
+      let imagen = element.imagen;
+      let titulo = element.titulo;
+      let sinopsis = element.sinopsis;
+      const pelicula = new AFavoritos(id, imagen, titulo, sinopsis);
+      let index = favoritos.findIndex((element) => element.id === pelicula.id);
+
+      if (index === -1) {
+        const pelicula = new AFavoritos(id, imagen, titulo, sinopsis);
+        favoritos.push(pelicula);
+      }
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
+    });
+
+    button.addEventListener("click", () => {
+      Toastify({
+        text: "Añadido a favoritos!",
+        duration: 2000,
+        gravity: "top",
+        position: "right",
+        destination: "../views/principal.html",
+        stopOnFocus: true,
+        style: {
+          background: "#ba3232",
+          color: "white",
+        },
+      }).showToast();
+    });
+  });
+}
 
 /* //Busqueda de peliculas
 function buscarPeliculas() {
     let encontrado = peliculas.find((Pelicula)=>Pelicula.titulo.toLowerCase().indexOf(titulo.toLocaleLowerCase())!==-1);
     console.log("RESULTADO DE BUSQUEDA: ", encontrado);  
-} */    
+} */
