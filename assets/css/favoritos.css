@@ -63,9 +63,8 @@ body {
     transform: scale(1.1);
 }
 
+
 button {
-    margin-bottom: 15px;
-    margin-right: 100px;
     background: #ba3232;
     color: white;
     padding: 8px;
@@ -79,30 +78,32 @@ button:hover {
     color: white;
 }
 
+
 .table {
-    background-color: rgba(96, 94, 92, 0.793);
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
+    background-color: rgba(42, 42, 42, 0.793);
+    width: 80%;
+    margin: auto;
+    color: white;
+    font-size: 18px;
 }
 
 picture img {
-    width: 200px;
-    margin: 50px 10px 10px 100px;
+    width: 180px;
+    margin: 15px;
 }
+
 
 th {
     font-size: x-large;
+    border-bottom: 1px solid rgba(129, 126, 126, 0.836);
+}
+td{
+    border-bottom: 1px solid rgba(129, 126, 126, 0.836);
+    text-align: center;
 }
 
-.vaciarFav {
-    font-family: "Raleway", sans-serif;
-    width: 100px;
-    height: 40px;
-    background-color: #ba3232;
-    cursor: pointer;
-    color: white;
-    margin: 10px;
-}
+p {
+    font-size: 15px;
+    margin-bottom: 15px;
+} 
+

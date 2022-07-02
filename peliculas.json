@@ -232,5 +232,11 @@
     "titulo": "The wolfman",
     "imagen": "../../assets/images/wolfman.jpg",
     "sinopsis": "Larry Talbot regresa al castillo de su padre en Gales y conoce a una hermosa mujer. Una noche, Talbot la acompaña a un carnaval local donde conocen a una misteriosa adivina gitana..."
+  },
+  {
+    "id": 40,
+    "titulo": "The abobinable Dr. Phibes",
+    "imagen": "../../assets/images/drphibes.jpg",
+    "sinopsis": "El doctor Phibes lleva a cabo una diabólica venganza siguiendo una pauta bíblica. Los médicos que dejaron morir a su mujer no podrán bajar la guardia."
   }
 ]

@@ -85,10 +85,7 @@ if (title === "HorrorFlix - Login") {
     console.log(usuariosFromStorage);
 
     //uso operador ternario//
-    user === usuariosFromStorage[0].usuario &&
-      password === usuariosFromStorage[0].contraseña
-      ? alertExitoLogin()
-      : alertErrorLogin();
+    user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña ? alertExitoLogin(): alertErrorLogin();
   }
 
   const iniciarsession = document.getElementById("login");
@@ -129,7 +126,6 @@ let divContainer = document.querySelector(".peliculasLista");
 
 function mostrarEnPrincipal(arrayConPeliculas) {
   arrayConPeliculas.forEach((element) => {
-    //   console.log(element)
     let divPelicula = document.createElement("div");
 
     divPelicula.classList = "cards_peliculas";
@@ -190,8 +186,3 @@ function mostrarEnPrincipal(arrayConPeliculas) {
   });
 }
 
-/* //Busqueda de peliculas
-function buscarPeliculas() {
-    let encontrado = peliculas.find((Pelicula)=>Pelicula.titulo.toLowerCase().indexOf(titulo.toLocaleLowerCase())!==-1);
-    console.log("RESULTADO DE BUSQUEDA: ", encontrado);  
-} */
