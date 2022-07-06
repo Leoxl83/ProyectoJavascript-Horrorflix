@@ -84,7 +84,6 @@ if (title === "HorrorFlix - Login") {
 
     console.log(usuariosFromStorage);
 
-    //uso operador ternario//
     user === usuariosFromStorage[0].usuario && password === usuariosFromStorage[0].contraseña ? alertExitoLogin(): alertErrorLogin();
   }
 
@@ -115,6 +114,9 @@ function alertErrorLogin() {
     confirmButtonColor: "#ba3232",
   });
 }
+
+
+//Mostrar Peliculas en pagina principal
 
 cargarPelis();
 function cargarPelis() {
@@ -185,4 +187,3 @@ function mostrarEnPrincipal(arrayConPeliculas) {
     });
   });
 }
-

@@ -9,24 +9,31 @@
 }
 
 body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
     background-image: url("../images/fondo.jpg");
     background-size: 100%;
     min-height: 100vh;
     width: 100%;
+    margin:0% auto;
 }
 
-.header {
+header {
+    grid-row: 1;
     height: 130px;
+    position: sticky;
+    top: 0;
 
 }
 
 .header__menu {
     float: right;
-    margin: 70px 110px;
+    margin: 70px 110px 0 0;
+    
 }
 
 .header__link {
-    display: inline-flex;
+    display: inline;
     color: white;
     text-align: left;
     padding: 14px 0px;
@@ -50,9 +57,9 @@ body {
 }
 
 .navbar {
-    margin-bottom: 50px;
     background-color: #202020;
     height: 140px;
+    border-bottom: 5px solid rgba(129, 126, 126, 0.836);
 
 }
 
@@ -66,12 +73,21 @@ body {
     transform: scale(1.1);
 }
 
+.banner {
+    border-bottom: 2px solid rgba(129, 126, 126, 0.836);
+ 
+}
+
+
 .footer {
+    grid-row: 3;
     background-color: #363836;
     color: #ba3232;
     padding: 10px;
-    margin-top: 30px;
-    bottom: 0;
+    margin-top: 20px;
+    width: 100% ;
+    position: relative;
+    bottom: 0px;
 }
 
 .footer__copyright__icono {
@@ -88,7 +104,7 @@ body {
 }
 
 .tituloRedes {
-    padding: 20px;
+    padding: 10px;
 }
 
 .peliculasLista {
@@ -123,7 +139,7 @@ body {
     background: #24303c;
     padding: 25px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 60px;
     border-radius: 4px;
     font-family: 'raleway';
     color: white;
@@ -191,4 +207,14 @@ button:hover {
     cursor: pointer;
     transform: scale(1.1);
     color: white;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size:xx-large;
+    margin-top: 30px;
+    padding-top: 5px;
+    background: #ba3232;
+    height: 50px;
 }
