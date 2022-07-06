@@ -10,10 +10,10 @@
 body {
     background-image: url("../images/fondo.jpg");
     background-size: 100%;
+    display: grid;
     min-height: 100vh;
     width: 100%;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto;
 }
 
 header {
@@ -94,6 +94,7 @@ button:hover {
     color: white;
     font-size: 18px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 picture img {
@@ -114,3 +115,25 @@ p {
     font-size: 15px;
     margin-bottom: 15px;
 } 
+.footer {
+    grid-row: 3;
+    background-color: #363836;
+    color: #ba3232;
+    padding: 10px;
+    margin-top: 20px;
+   
+}
+
+.footer__copyright__icono {
+    width: 70px;
+    height: 70px;
+    padding: 0px 10px 20px 10px;
+}
+
+.footer__copyright {
+    background-color: #202020;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0 -10px -10px -10px;
+}
+

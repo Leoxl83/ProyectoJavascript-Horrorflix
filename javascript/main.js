@@ -38,11 +38,11 @@ if (title === "HorrorFlix - Registrate es gratis!") {
         confirmButtonColor: "#ba3232",
       });
       return false;
-    } else if (contraseña.length < 6) {
+    } else if (contraseña.length < 5) {
       Swal.fire({
         icon: "error",
         title: "Algo salió mal...",
-        text: "El password debe tener al menos 6 caracteres",
+        text: "El password debe tener al menos 5 caracteres",
         confirmButtonColor: "#ba3232",
       });
       return false;
@@ -98,7 +98,7 @@ if (title === "HorrorFlix - Login") {
 
 function alertExitoLogin() {
   Swal.fire({
-    title: "Bienvenido!",
+    title: "Bienvenido! ",
     icon: "success",
     confirmButtonText: "Vamos!",
     confirmButtonColor: "#ba3232",
