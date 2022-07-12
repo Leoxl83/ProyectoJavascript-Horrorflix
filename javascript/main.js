@@ -115,7 +115,6 @@ function alertErrorLogin() {
   });
 }
 
-
 //Mostrar Peliculas en pagina principal
 
 cargarPelis();
@@ -145,6 +144,20 @@ function mostrarEnPrincipal(arrayConPeliculas) {
     if (favoritosLocalStorage) {
       favoritosLink(favoritosLocalStorage);
     }
+   
+
+    let buttonInfo = document.createElement("button");
+    buttonInfo.innerHTML = "Ver Info";
+    divPelicula.appendChild(buttonInfo);
+
+    buttonInfo.addEventListener("click", () => {
+      Swal.fire({
+        icon: `info`,
+        text: `${element.sinopsis}`,
+        confirmButtonColor: "#ba3232",
+        confirmButtonText: "Volver",
+      })
+    })
 
     let button = document.createElement("button");
     button.innerHTML = "Agregar a Favoritos";
@@ -187,3 +200,4 @@ function mostrarEnPrincipal(arrayConPeliculas) {
     });
   });
 }
+
