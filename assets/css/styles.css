@@ -60,7 +60,6 @@ header {
     background-color: #202020;
     height: 140px;
     border-bottom: 5px solid rgba(129, 126, 126, 0.836);
-
 }
 
 #logo {
@@ -75,9 +74,7 @@ header {
 
 .banner {
     border-bottom: 2px solid rgba(129, 126, 126, 0.836);
- 
 }
-
 
 .footer {
     grid-row: 3;

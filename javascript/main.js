@@ -140,12 +140,6 @@ function mostrarEnPrincipal(arrayConPeliculas) {
             </div>`;
     divContainer.appendChild(divPelicula);
 
-    let favoritosLocalStorage = JSON.parse(localStorage.getItem("carrito"));
-    if (favoritosLocalStorage) {
-      favoritosLink(favoritosLocalStorage);
-    }
-   
-
     let buttonInfo = document.createElement("button");
     buttonInfo.innerHTML = "Ver Info";
     divPelicula.appendChild(buttonInfo);
